@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Panel de redes · puente</title>
+<style>body{font:16px system-ui,sans-serif;max-width:520px;margin:15vh auto;padding:0 20px;color:#222}</style>
+</head>
+<body>
+<h2>Volviendo a tu panel…</h2>
+<p id="msg">Si no pasa nada, asegúrate de que el Panel de redes esté abierto en este computador.</p>
+<script>
+  // Solo reenvía el resultado del inicio de sesión al panel local. No guarda ni envía nada a ningún otro sitio.
+  location.replace("http://localhost:8765/oauth/callback" + location.search);
+</script>
+</body>
+</html>
