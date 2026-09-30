@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Panel de redes</title>
+<style>
+  body{font:16px/1.6 system-ui,"Segoe UI",sans-serif;max-width:760px;margin:0 auto;padding:32px 20px 60px;color:#1c2230}
+  h1{font-size:28px;margin-bottom:4px} h2{font-size:19px;margin-top:32px} .muted{color:#6a7188;font-size:14px}
+  table{border-collapse:collapse;width:100%;font-size:14.5px} td,th{border:1px solid #dfe3ec;padding:8px 10px;text-align:left;vertical-align:top} th{background:#f3f4f8}
+  .en{background:#f3f4f8;border-radius:10px;padding:14px 18px;margin:20px 0} a{color:#3557e8}
+</style>
+</head>
+<body>
+<h1>Política de privacidad</h1>
+<p class="muted">Panel de redes · Última actualización: 30 de septiembre de 2026</p>
+
+<div class="en" lang="en">
+<b>Summary (English):</b> Panel de redes is a personal, local-first desktop dashboard. It reads statistics of the user's own
+YouTube, Instagram, Facebook Pages and TikTok accounts using read-only permissions. All data and access tokens are stored
+only on the user's own computer (tokens encrypted with Windows DPAPI). The developer runs no server, receives no data, and
+does not sell or share it. Users can disconnect an account at any time, which deletes its stored data.
+Contact: <a href="mailto:eldatoeco@gmail.com">eldatoeco@gmail.com</a>.
+</div>
+
+<h2>1. Quién es el responsable</h2>
+<p>Eduardo Naranjo, desarrollador de «Panel de redes». Contacto: <a href="mailto:eldatoeco@gmail.com">eldatoeco@gmail.com</a>.</p>
+
+<h2>2. Qué es esta aplicación</h2>
+<p>«Panel de redes» es una aplicación para Windows, de uso personal y privado entre un grupo reducido de personas conocidas,
+que muestra en un solo panel las estadísticas de las propias cuentas de YouTube, Instagram, Facebook (páginas) y TikTok de
+cada persona. Funciona <b>en el computador de cada usuario</b> y se abre en su navegador. No es un servicio público ni tiene un servidor del desarrollador.</p>
+
+<h2>3. Qué datos se consultan</h2>
+<p>Solo con permisos de <b>lectura</b> y solo de la cuenta que la persona decide conectar:</p>
+<table>
+<tr><th>Red</th><th>Datos que se leen</th></tr>
+<tr><td>YouTube (Google)</td><td>Nombre del canal, suscriptores, vistas, videos (título, miniatura, vistas, me gusta, comentarios) y vistas diarias y tiempo de visualización (YouTube Analytics).</td></tr>
+<tr><td>Instagram</td><td>Nombre de usuario, seguidores, publicaciones (texto, miniatura, me gusta, comentarios) y sus métricas: vistas, alcance, guardados y compartidos.</td></tr>
+<tr><td>Facebook (páginas)</td><td>Nombre de la página, seguidores, publicaciones (texto, imagen, reacciones, comentarios, compartidos) y vistas. El permiso de portafolio comercial solo se usa para localizar las páginas de la persona.</td></tr>
+<tr><td>TikTok</td><td>Nombre visible, número de seguidores y de videos, y por video: título, portada, vistas, me gusta, comentarios y compartidos.</td></tr>
+</table>
+<p>No se leen mensajes privados, contactos, contraseñas ni información de terceros, y la aplicación <b>no publica ni modifica nada</b> en las cuentas.</p>
+
+<h2>4. Cómo se obtiene el acceso a tu cuenta</h2>
+<p>Al iniciar sesión, cada plataforma entrega a la aplicación un código de autorización y luego un <i>token</i> de acceso. Ese token es lo único
+«sensible» que se guarda; la aplicación nunca ve ni almacena la contraseña de la persona.</p>
+
+<h2>5. Dónde se guardan</h2>
+<ul>
+<li>Las cifras, publicaciones y tokens se guardan <b>únicamente en el computador del usuario</b>, en una base de datos local.</li>
+<li>Los tokens se cifran con la protección de datos de Windows (DPAPI), atados a la cuenta de Windows de esa persona.</li>
+<li>El desarrollador <b>no recibe, no almacena ni tiene acceso</b> a los datos de otras personas.</li>
+</ul>
+
+<h2>6. Página puente de inicio de sesión</h2>
+<p>Algunas plataformas exigen que el inicio de sesión termine en una dirección HTTPS. Para eso se usa la página
+<code>https://eduardonv9.github.io/panel-redes-puente/</code>, alojada en GitHub Pages. Esta página solo reenvía el resultado del inicio de sesión
+al computador del usuario (<code>localhost</code>); no guarda ni procesa datos. Como cualquier sitio web, GitHub puede registrar datos técnicos
+de acceso según su propia política (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>).</p>
+
+<h2>7. Uso y comparticiones</h2>
+<ul>
+<li>Los datos se usan únicamente para mostrarle al propio usuario sus estadísticas.</li>
+<li>No se venden, no se ceden, no se usan para publicidad ni para entrenar modelos, y no se comparten con terceros.</li>
+<li>La aplicación solo se comunica con las interfaces oficiales (APIs) de Google/YouTube, Meta (Instagram y Facebook) y TikTok.</li>
+</ul>
+<p>El uso de la información recibida de las APIs de Google cumple la
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>,
+incluidos los requisitos de uso limitado.</p>
+
+<h2>8. Conservación y eliminación</h2>
+<ul>
+<li>El usuario puede pulsar <b>«Desconectar»</b> en el panel: se borran de su computador los datos y el token de esa cuenta. También puede borrar un perfil completo.</li>
+<li>Puede revocar el acceso en cualquier momento desde la plataforma:
+  <a href="https://myaccount.google.com/permissions">Google</a>, Instagram y Facebook (Configuración → Apps y sitios web) y TikTok (Configuración → Seguridad y permisos → Permisos de la app).</li>
+<li>Al desinstalar la aplicación y borrar su carpeta de datos, no queda información en ningún otro lugar.</li>
+</ul>
+
+<h2>9. Derechos del titular (Ley 1581 de 2012, Colombia)</h2>
+<p>Como los datos no salen del computador del propio usuario, él mantiene el control total. Aun así, cualquier persona puede escribir a
+<a href="mailto:eldatoeco@gmail.com">eldatoeco@gmail.com</a> para preguntar sobre esta política o ejercer sus derechos de conocer, actualizar, rectificar y suprimir sus datos.</p>
+
+<h2>10. Menores de edad</h2>
+<p>La aplicación no está dirigida a menores de 18 años.</p>
+
+<h2>11. Cambios</h2>
+<p>Si esta política cambia, se actualizará esta página y su fecha.</p>
+
+<p class="muted"><a href="terminos.html">Términos de servicio</a></p>
+</body>
+</html>
